@@ -1,5 +1,6 @@
 package cn.monk.news.service;
 
+import cn.monk.news.dao.UserDao;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -8,5 +9,7 @@ import org.springframework.stereotype.Service;
  */
 @Service
 public class UserService {
+    @Autowired
+    private UserDao userDao;
 
 }
