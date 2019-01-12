@@ -40,11 +40,11 @@ public class HomeController {
             ViewObject vo = new ViewObject();
             vo.set("news", news);
             vo.set("user", userService.getUser(news.getUserId()));
-//            if (localUserId != 0) {
-//                vo.set("like", likeService.getLikeStatus(localUserId, EntityType.ENTITY_NEWS, news.getId()));
-//            } else {
-//                vo.set("like", 0);
-//            }
+            if (localUserId != 0) {
+                vo.set("like", likeService.getLikeStatus(localUserId, EntityType.ENTITY_NEWS, news.getId()));
+            } else {
+                vo.set("like", 0);
+            }
             vos.add(vo);
         }
         return vos;
