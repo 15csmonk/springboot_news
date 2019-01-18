@@ -1,6 +1,5 @@
 package cn.monk.news.util;
 
-
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.mail.javamail.JavaMailSenderImpl;
 import org.springframework.mail.javamail.MimeMessageHelper;

@@ -1,7 +1,5 @@
 package cn.monk.news.service;
 
-
-import cn.monk.news.model.News;
 import cn.monk.news.util.NewsUtil;
 import com.alibaba.fastjson.JSONObject;
 import com.qiniu.common.QiniuException;
