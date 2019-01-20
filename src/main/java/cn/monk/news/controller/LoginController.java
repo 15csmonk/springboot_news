@@ -1,5 +1,6 @@
 package cn.monk.news.controller;
 
+import cn.monk.news.async.EventProducer;
 import cn.monk.news.model.News;
 import cn.monk.news.service.UserService;
 import cn.monk.news.util.NewsUtil;
@@ -18,6 +19,8 @@ import java.util.Map;
 public class LoginController {
     @Autowired
     UserService userService;
+    @Autowired
+    EventProducer eventProducer;
     @RequestMapping(path = {"/reg/"}, method = {RequestMethod.GET, RequestMethod.POST})
     @ResponseBody
     public String reg(@RequestParam("username") String username,

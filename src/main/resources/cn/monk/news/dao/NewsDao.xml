@@ -11,7 +11,7 @@
         FROM
         <include refid="table"/>
         <if test="userId != 0">
-            WHERE userId = #{userId}
+            WHERE user_id = #{userId}
         </if>
         ORDER BY id DESC
         LIMIT #{offset},#{limit}
